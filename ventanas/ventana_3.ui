@@ -26,19 +26,22 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(200, 200, 200);</string>
+   <string notr="true">background-color: rgb(253, 253, 253);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>20</y>
-      <width>304</width>
-      <height>283</height>
+      <x>40</x>
+      <y>10</y>
+      <width>390</width>
+      <height>252</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>1</number>
+     </property>
      <item>
       <widget class="QLabel" name="label">
        <property name="text">
@@ -114,6 +117,9 @@
      </item>
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>6</number>
+       </property>
        <item>
         <widget class="QCheckBox" name="sintoma_10">
          <property name="text">
@@ -138,11 +144,14 @@
    <widget class="QPushButton" name="siguiente_ventana_3">
     <property name="geometry">
      <rect>
-      <x>370</x>
-      <y>310</y>
+      <x>263</x>
+      <y>313</y>
       <width>56</width>
-      <height>17</height>
+      <height>21</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(134, 134, 134);</string>
     </property>
     <property name="text">
      <string>Siguiente</string>
@@ -151,11 +160,14 @@
    <widget class="QPushButton" name="volver_ventana_3">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>310</y>
+      <x>130</x>
+      <y>313</y>
       <width>56</width>
-      <height>17</height>
+      <height>21</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(134, 134, 134);</string>
     </property>
     <property name="text">
      <string>Volver</string>

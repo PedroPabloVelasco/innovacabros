@@ -26,8 +26,7 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">
-background-color: rgb(200, 200, 200);</string>
+   <string notr="true">background-color: rgb(254, 254, 254);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QWidget" name="verticalLayoutWidget">
@@ -35,15 +34,15 @@ background-color: rgb(200, 200, 200);</string>
      <rect>
       <x>97</x>
       <y>130</y>
-      <width>251</width>
-      <height>80</height>
+      <width>330</width>
+      <height>86</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
       <widget class="QLabel" name="label">
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Imprimiendo ticket!!&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Espere y muchas gracias&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Generando ticket!!&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Espere y muchas gracias&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
      </item>
@@ -52,14 +51,33 @@ background-color: rgb(200, 200, 200);</string>
    <widget class="QPushButton" name="volver_ventana_5">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>310</y>
+      <x>151</x>
+      <y>296</y>
       <width>56</width>
-      <height>17</height>
+      <height>31</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(134, 134, 134);</string>
     </property>
     <property name="text">
      <string>Volver</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="siguiente_ventana_5">
+    <property name="geometry">
+     <rect>
+      <x>274</x>
+      <y>296</y>
+      <width>56</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(134, 134, 134);</string>
+    </property>
+    <property name="text">
+     <string>Siguiente</string>
     </property>
    </widget>
   </widget>

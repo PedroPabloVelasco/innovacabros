@@ -10,6 +10,7 @@ from frontend.ventana_2 import Ventana2
 from frontend.ventana_3 import Ventana3
 from frontend.ventana_4 import Ventana4
 from frontend.ventana_5 import Ventana5
+from frontend.ventana_6 import Ventana6
 
 if __name__ == '__main__':
     def hook(type, traceback):
@@ -24,6 +25,7 @@ if __name__ == '__main__':
     ventana_3 = Ventana3()
     ventana_4 = Ventana4()
     ventana_5 = Ventana5()
+    ventana_6 = Ventana6()
 
 
 # # Conectar señales

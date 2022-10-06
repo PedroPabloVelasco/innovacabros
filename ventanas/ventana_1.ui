@@ -26,23 +26,23 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(200, 200, 200);</string>
+   <string notr="true">background-color: rgb(254, 254, 254);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>150</x>
+      <x>140</x>
       <y>50</y>
-      <width>160</width>
-      <height>100</height>
+      <width>212</width>
+      <height>138</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
       <widget class="QLabel" name="label">
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;Bienvenido!!&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;Ingrese sus datos&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Bienvenido!!&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Ingrese sus datos&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
      </item>
@@ -52,7 +52,7 @@
         <string notr="true">background-color: rgb(240, 240, 240);</string>
        </property>
        <property name="text">
-        <string>Rut:</string>
+        <string/>
        </property>
       </widget>
      </item>
@@ -62,7 +62,7 @@
         <string notr="true">background-color: rgb(240, 240, 240);</string>
        </property>
        <property name="text">
-        <string>Sistema de prevision:</string>
+        <string/>
        </property>
       </widget>
      </item>
@@ -71,14 +71,43 @@
    <widget class="QPushButton" name="siguiente_ventana_1">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>300</y>
+      <x>220</x>
+      <y>295</y>
       <width>56</width>
-      <height>17</height>
+      <height>31</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(134, 134, 134);</string>
     </property>
     <property name="text">
      <string>Siguiente</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>107</x>
+      <y>139</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Rut:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>170</y>
+      <width>131</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sistema de previsión:</string>
     </property>
    </widget>
   </widget>

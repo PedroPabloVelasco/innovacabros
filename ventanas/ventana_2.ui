@@ -26,7 +26,7 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(200, 200, 200);</string>
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
@@ -45,7 +45,7 @@
      <number>1</number>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Coloque su dedo en el lector de huella&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;y tomese la temperatura&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;Coloque su dedo en el lector de huella&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;y tomese la temperatura&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="textFormat">
      <enum>Qt::AutoText</enum>
@@ -57,11 +57,14 @@
    <widget class="QPushButton" name="siguiente_ventana_2">
     <property name="geometry">
      <rect>
-      <x>380</x>
-      <y>310</y>
+      <x>287</x>
+      <y>306</y>
       <width>56</width>
-      <height>17</height>
+      <height>21</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(134, 134, 134);</string>
     </property>
     <property name="text">
      <string>Siguiente</string>
@@ -70,11 +73,14 @@
    <widget class="QPushButton" name="volver_ventana_2">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>310</y>
+      <x>127</x>
+      <y>306</y>
       <width>56</width>
-      <height>17</height>
+      <height>21</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(134, 134, 134);</string>
     </property>
     <property name="text">
      <string>Volver</string>

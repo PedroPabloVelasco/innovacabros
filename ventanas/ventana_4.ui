@@ -26,14 +26,14 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(200, 200, 200);</string>
+   <string notr="true">background-color: rgb(253, 253, 253);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>90</y>
+      <y>70</y>
       <width>411</width>
       <height>231</height>
      </rect>
@@ -108,24 +108,27 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>70</x>
+      <x>20</x>
       <y>20</y>
       <width>401</width>
-      <height>61</height>
+      <height>51</height>
      </rect>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Ingrese en la escala el dolor que presenta&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Ingrese en la escala el dolor que presenta&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QPushButton" name="siguiente_ventana_4">
     <property name="geometry">
      <rect>
-      <x>390</x>
-      <y>320</y>
+      <x>255</x>
+      <y>310</y>
       <width>56</width>
-      <height>17</height>
+      <height>21</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(134, 134, 134);</string>
     </property>
     <property name="text">
      <string>Siguiente</string>
@@ -134,11 +137,14 @@
    <widget class="QPushButton" name="volver_ventana_4">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>320</y>
+      <x>114</x>
+      <y>310</y>
       <width>56</width>
-      <height>17</height>
+      <height>21</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(134, 134, 134);</string>
     </property>
     <property name="text">
      <string>Volver</string>
