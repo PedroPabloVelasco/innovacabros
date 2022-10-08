@@ -12,6 +12,7 @@ window_name, base_class = uic.loadUiType("ventanas/ventana_3.ui")
 class Ventana3(window_name, base_class):  # pylint: disable=E0602
     senal_ventana_2 = pyqtSignal()
     senal_ventana_4 = pyqtSignal(list)
+    senal_sintomas = pyqtSignal(int)
 
     def __init__(self):
         super().__init__()
@@ -28,6 +29,8 @@ class Ventana3(window_name, base_class):  # pylint: disable=E0602
         self.sintomas_seleccionados()
         if len(self.sintomas) > 0:
             self.senal_ventana_4.emit(self.sintomas)
+            self.senal_sintomas.emit(len(self.sintomas))
+            print(f'Catidad de sintomas: {len(self.sintomas)}')
             self.hide()
         else:
             self.mensaje_error = QLabel('Debe seleccionar al menos un sintoma!', self)

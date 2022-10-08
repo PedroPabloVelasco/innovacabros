@@ -11,14 +11,14 @@ window_name, base_class = uic.loadUiType("ventanas/ventana_6.ui")
 class Ventana6(window_name, base_class):  # pylint: disable=E0602
     senal_ventana_5 = pyqtSignal()
 
-    def __init__(self):
+    def __init__(self, categoria, numero):
         super().__init__()
         self.setupUi(self)
         self.init_gui()
 
     def init_gui(self):
         self.setWindowTitle("Ventana 6")
-        print()
+        self.mostrar_ventana()
 
     def anterior_ventana(self):
         self.senal_ventana_5.emit()
