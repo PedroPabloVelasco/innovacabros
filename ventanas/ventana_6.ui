@@ -78,7 +78,7 @@ background-color: rgb(238, 238, 238);</string>
 font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
    </property>
    <property name="text">
-    <string>A</string>
+    <string>D</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_3">
@@ -215,6 +215,23 @@ font: 75 10pt &quot;MS Shell Dlg 2&quot;;</string>
    </property>
    <property name="text">
     <string>hrs</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="imprimir">
+   <property name="geometry">
+    <rect>
+     <x>217</x>
+     <y>282</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(238, 238, 238);
+background-color: rgb(134, 134, 134);</string>
+   </property>
+   <property name="text">
+    <string>Imprimir</string>
    </property>
   </widget>
  </widget>
