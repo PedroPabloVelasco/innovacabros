@@ -29,7 +29,7 @@ if __name__ == '__main__':
     ventana_6 = Ventana6()
 
     # Instanciar Logicas
-    logica_ventana = LogicaVentana(cantidad_sintomas)
+    logica_ventana = LogicaVentana()
 
 
 # # Conectar señales
