@@ -18,7 +18,6 @@ class Ventana6(window_name, base_class):  # pylint: disable=E0602
 
     def init_gui(self):
         self.setWindowTitle("Ventana 6")
-        self.mostrar_ventana()
 
     def anterior_ventana(self):
         self.senal_ventana_5.emit()

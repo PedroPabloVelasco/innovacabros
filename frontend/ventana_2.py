@@ -9,7 +9,7 @@ from PyQt5.QtCore import pyqtSignal
 window_name, base_class = uic.loadUiType("ventanas/ventana_2.ui")
 
 class Ventana2(window_name, base_class):  # pylint: disable=E0602
-    senal_ventana_1 = pyqtSignal()
+    senal_ventana_XX = pyqtSignal()
     senal_ventana_3 = pyqtSignal()
 
     def __init__(self):
@@ -28,7 +28,7 @@ class Ventana2(window_name, base_class):  # pylint: disable=E0602
         self.hide()
 
     def anterior_ventana(self):
-        self.senal_ventana_1.emit()
+        self.senal_ventana_XX.emit()
         self.hide()
     
     def mostrar_ventana(self):
