@@ -29,7 +29,7 @@ if __name__ == '__main__':
     ventana_6 = Ventana6()
 
     # Instanciar Logicas
-    logica_ventana = LogicaVentana(cantidad_sintomas)
+    # logica_ventana = LogicaVentana(cantidad_sintomas)
 
 
 # # Conectar señales
@@ -48,7 +48,7 @@ ventana_4.senal_ventana_3.connect(ventana_3.mostrar_ventana)
 ventana_5.senal_ventana_4.connect(ventana_4.mostrar_ventana)
 
 # Fila
-logica_ventana.senal_fila.connect
+# logica_ventana.senal_fila.connect
 
 
 ventana_1.show()

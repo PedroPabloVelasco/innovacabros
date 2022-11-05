@@ -21,7 +21,7 @@ class Ventana5(window_name, base_class):  # pylint: disable=E0602
         self.setWindowTitle("Ventana 5")
         self.volver_ventana_5.clicked.connect(self.anterior_ventana)
         self.siguiente_ventana_5.clicked.connect(self.siguiente_ventana)
-        print()
+        
 
     def siguiente_ventana(self):
         self.senal_ventana_6.emit()

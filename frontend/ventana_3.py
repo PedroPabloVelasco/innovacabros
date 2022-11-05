@@ -18,7 +18,7 @@ class Ventana3(window_name, base_class):  # pylint: disable=E0602
         super().__init__()
         self.setupUi(self)
         self.init_gui()
-        self.sintomas = list()
+        self.sintomas = []
 
     def init_gui(self):
         self.setWindowTitle("Ventana 3")
@@ -27,38 +27,43 @@ class Ventana3(window_name, base_class):  # pylint: disable=E0602
 
     def siguiente_ventana(self):
         self.sintomas_seleccionados()
-        if len(self.sintomas) > 0:
-            self.senal_ventana_4.emit(self.sintomas)
-            self.senal_sintomas.emit(len(self.sintomas))
-            print(f'Catidad de sintomas: {len(self.sintomas)}')
-            self.hide()
+        if len(self.sintomas) == 1:
+            if self.sintomas[0] == 'Malestar General':
+                self.senal_ventana_4.emit(self.sintomas)
+                self.hide()
         else:
-            self.mensaje_error = QLabel('Debe seleccionar al menos un sintoma!', self)
-            self.mensaje_error.setGeometry(115, 275, 231, 21)
+            self.mensaje_error = QLabel('Debe seleccionar solo un metodo!', self)
+            self.mensaje_error.setGeometry(144, 430, 191, 16)
             self.mensaje_error.setStyleSheet('background-color: rgb(255, 0, 0); color: rgb(255, 255, 255);')
             self.mensaje_error.setVisible(True)
 
     def sintomas_seleccionados(self):
-        if self.sintoma_1.isChecked():
-            self.sintomas.append(self.sintoma_1.text())
-        if self.sintoma_2.isChecked():
-            self.sintomas.append(self.sintoma_2.text())
-        if self.sintoma_3.isChecked():
-            self.sintomas.append(self.sintoma_3.text())
-        if self.sintoma_4.isChecked():
-            self.sintomas.append(self.sintoma_4.text())
-        if self.sintoma_5.isChecked():
-            self.sintomas.append(self.sintoma_5.text())
-        if self.sintoma_6.isChecked():
-            self.sintomas.append(self.sintoma_6.text())
-        if self.sintoma_7.isChecked():
-            self.sintomas.append(self.sintoma_7.text())
-        if self.sintoma_8.isChecked():
-            self.sintomas.append(self.sintoma_8.text())
-        if self.sintoma_9.isChecked():
-            self.sintomas.append(self.sintoma_9.text())
-        if self.sintoma_10.isChecked() and self.sintoma_otro_respuesta.text() != '':
-            self.sintomas.append(self.sintoma_otro_respuesta.text())
+        if self.malestar.isChecked():
+            self.sintomas.append(self.malestar.text())
+        elif self.desmayo.isChecked():
+            self.sintomas.append(self.desmayo.text())
+        elif self.lesion.isChecked():
+            self.sintomas.append(self.lesion.text())
+        elif self.dolor_cuerpo.isChecked():
+            self.sintomas.append(self.dolor_cuerpo.text())
+        elif self.diabetes.isChecked():
+            self.sintomas.append(self.diabetes.text())
+        elif self.dificultad_respirar.isChecked():
+            self.sintomas.append(self.dificultad_respirar.text())
+        elif self.embarazo.isChecked():
+            self.sintomas.append(self.embarazo.text())
+        elif self.ets.isChecked():
+            self.sintomas.append(self.ets.text())
+        elif self.hemorragia.isChecked():
+            self.sintomas.append(self.hemorragia.text())
+        elif self.infeccion.isChecked():
+            self.sintomas.append(self.infeccion.text())
+        elif self.tronco_superior.isChecked():
+            self.sintomas.append(self.tronco_superior.text())
+        elif self.problemas_piel.isChecked():
+            self.sintomas.append(self.problemas_piel.text())
+        elif self.vomitos.isChecked():
+            self.sintomas.append(self.vomitos.text())
 
     def anterior_ventana(self):
         self.senal_ventana_2.emit()
