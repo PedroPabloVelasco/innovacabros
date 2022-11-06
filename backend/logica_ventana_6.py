@@ -4,10 +4,12 @@ from random import randint
 
 class LogicaVentana(QObject):
     senal_fila = pyqtSignal(str, int)
+    numero_fila = 0
 
-    def __init__(self, cantidad_sintomas):
+    def __init__(self, cantidad_sintomas=0,  categoria=""):
         super().__init__()
         self.cantidad_sintomas = cantidad_sintomas
+        self.categoria = categoria
         self.revisar_sintomas()
 
     def revisar_sintomas(self):
@@ -21,6 +23,6 @@ class LogicaVentana(QObject):
             self.categoria = 'D'
         elif self.cantidad_sintomas > 7:
             self.categoria = 'E'
-        self.numero = randint(1, 100)
-        self.senal_fila.emit(self.categoria, self.numero)
+        self.numero_fila+=1
+        self.senal_fila.emit(self.categoria, self.numero_fila)
         
