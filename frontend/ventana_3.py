@@ -38,6 +38,7 @@ class Ventana3(window_name, base_class):  # pylint: disable=E0602
             self.mensaje_error.setVisible(True)
 
     def sintomas_seleccionados(self):
+        self.sintomas = []
         if self.malestar.isChecked():
             self.sintomas.append(self.malestar.text())
         elif self.desmayo.isChecked():

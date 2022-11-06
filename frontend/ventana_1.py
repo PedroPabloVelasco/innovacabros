@@ -10,7 +10,7 @@ from PyQt5.QtWidgets import QLabel
 window_name, base_class = uic.loadUiType("ventanas/ventana_1.ui")
 
 class Ventana1(window_name, base_class):  # pylint: disable=E0602
-    senal_ventana_XX = pyqtSignal()
+    senal_ventana_2 = pyqtSignal()
 
     def __init__(self):
         super().__init__()
@@ -24,7 +24,7 @@ class Ventana1(window_name, base_class):  # pylint: disable=E0602
 
     def siguiente_ventana(self):
         if self.rut.text() != '' or self.sistema_prevision.text() != '': 
-            self.senal_ventana_XX.emit()
+            self.senal_ventana_2.emit()
             self.hide()
         else:
             self.mensaje_error = QLabel('Error al ingresar rut y/o sisetema de prevision!', self)
